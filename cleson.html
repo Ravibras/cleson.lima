@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campanha de Cleson</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #003399;
+            color: white;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em;
+        }
+        nav a:hover {
+            background-color: #002280;
+        }
+        section {
+            padding: 2em;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        h1, h2 {
+            color: #0044cc;
+        }
+        form {
+            margin-top: 1em;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #0044cc;
+            color: white;
+            border: none;
+            padding: 0.7em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #003399;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Campanha de cleson</h1>
+        <p>Juntos por um futuro melhor!</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#propostas">Propostas</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>Sobre o Candidato</h2>
+        <p></p>
+    </section>
+
+    <section id="propostas">
+        <h2>Propostas</h2>
+        <ul>
+            <li><strong>Proposta 1:</strong>Uma melhor educasao</li>
+            <li><strong>Proposta 2:</strong>Varios projetos
+        </li>
+            <li><strong>Proposta 3:</strong> [Descrição da proposta]</li>
+        </ul>
+    </section>
+
+    <section id="noticias">
+        <h2>Notícias</h2>
+        <article>
+            <h3>[Título da Notícia]</h3>
+            <p>[Resumo da notícia. Data: DD/MM/AAAA]</p>
+        </article>
+        <!-- Adicione mais artigos de notícias aqui -->
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar Mensagem">
+        </form>
+    </section>
+</body>
+</html>
